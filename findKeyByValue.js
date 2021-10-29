@@ -9,7 +9,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// function that fines a value in an object and returns the key it is in.
+// function that finds a value in an object and returns the key it is in.
 const findKeyByValue = function(object, value) {
   const arr = Object.keys(object); // assignes keys in object to an array
   for (const item of arr) {
