@@ -28,6 +28,8 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+//---------------------------------------------------------------------------------------
+
 // Returns true if both objects have identical keys with identical values.
 // Otherwise you get back a big fat false!
 const eqObjects = function(object1, object2) {
@@ -36,7 +38,10 @@ const eqObjects = function(object1, object2) {
   }
 
   for (obj1 of Object.keys(object1)) {
+    console.log(typeof object1[obj1]);
+    console.log(object1[obj1]);
     if (object1[obj1].isArray === true && object2[obj1].isArray === true){
+      console.log("hi");
       if (eqArrays(object1[obj1], object2[obj1] === false))
         return false
     } else if (object1[obj1] !== object2[obj1]) {
@@ -48,15 +53,15 @@ const eqObjects = function(object1, object2) {
 
 
 // TEST
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-eqObjects(ab, ba); // => true
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// eqObjects(ab, ba); // => true
 
-const abc = { a: "1", b: "2", c: "3" };
-eqObjects(ab, abc); // => false
+// const abc = { a: "1", b: "2", c: "3" };
+// eqObjects(ab, abc); // => false
 
-assertEqual(eqObjects(ab, ba), true);
-assertEqual(eqObjects(ab, abc), false);
+// assertEqual(eqObjects(ab, ba), true);
+// assertEqual(eqObjects(ab, abc), false);
 
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
