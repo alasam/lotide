@@ -8,10 +8,8 @@ const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   } else {
-    // first loop goes over the each item in the first array
+    // loop goes over the each item in the first array
     for (let i = 0; i < arr1.length; i++) {
-      // second loop goes and compares if each val
-      for (let x = 0; x < arr2.length; x++)
       if (arr1[i] !== arr2[i]) {
         return false;
       }
