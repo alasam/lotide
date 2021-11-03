@@ -1,4 +1,5 @@
 // FUNCTION IMPLEMENTATION
+// Module
 const assertEqual = require('./assertEqual');
 
 // Function eqArrays checks and compares 2 arrays, if they are ideticle it will return as true, if not false

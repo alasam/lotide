@@ -1,3 +1,6 @@
+// Module
+const assertEqual = require('./eqArrays');
+
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
   // if actual is equal to expected, then we will return a success message to the console
