@@ -1,3 +1,4 @@
+// Modules
 const assertEqual = require('./assertEqual');
 
 // function checks returns head of the array

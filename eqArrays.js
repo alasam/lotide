@@ -1,4 +1,3 @@
-// FUNCTION IMPLEMENTATION
 // Module
 const assertEqual = require('./assertEqual');
 
